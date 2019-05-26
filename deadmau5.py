@@ -251,14 +251,13 @@ def draw():
     glRotate(move,0,0,1)
     deadmau5()
 ''''''
-    if move >20:
-        f=True
-    if move < -20:
-        f=False
-    if f:
-        move-=0.5
-    else:
-        move+=0.5
+if (move > 20) or (move < -20) :
+    f=True
+
+if f:
+    move-=0.5
+else:
+    move+=0.5
 
 
 
